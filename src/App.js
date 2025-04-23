@@ -1,20 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
-import Nav from './component/Nav';
-import Hero from './component/Hero';
-import AboutUs from './component/AboutUs';
-import Product from './component/Product';
-import Footer from './component/Footer';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './component/HomeLanding/Home';
+import Abouthome from './component/Aboutland/Abouthome';
+
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Hero />
-      <AboutUs />
-      <Product />
-      <Footer/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route index element ={<Home />} />
+            <Route path='/about' element ={<Abouthome />} />
+        </Routes>
+    </BrowserRouter>
+// import Nav from './component/Nav';
+// import Hero from './component/Hero';
+// import AboutUs from './component/AboutUs';
+// import Product from './component/Product';
+// import Footer from './component/Footer';
+
+// function App() {
+//   return (
+//     <div>
+//       <Nav />
+//       <Hero />
+//       <AboutUs />
+//       <Product />
+//       <Footer/>
+//     </div>
+// >>>>>>> main
   );
 }
 
