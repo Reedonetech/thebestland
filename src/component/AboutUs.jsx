@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div>
         {/* https://www.gywde.com */}
-    </div>
+    </div> 
   )
 }
 
