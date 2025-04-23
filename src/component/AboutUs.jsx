@@ -16,7 +16,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    </div> 
+    <div className='relative w-full h-screen overflow-hidden'>
       <div className='bg-gray-100 shadow-lg py-10'>
         <div className='lg:flex lg:flex-row gap-5 justify-center items-center text-center lg:w-full h-full px-4'>
           <div className='flex flex-col gap-5 justify-center items-center text-center w-full h-full px-4'>

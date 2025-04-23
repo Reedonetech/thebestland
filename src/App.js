@@ -2,7 +2,9 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './component/HomeLanding/Home';
-import Abouthome from './component/Aboutland/Abouthome';
+import Abouthero from './component/Aboutland/Abouthero';
+
+
 
 
 function App() {
@@ -10,25 +12,9 @@ function App() {
     <BrowserRouter>
         <Routes>
             <Route index element ={<Home />} />
-            <Route path='/about' element ={<Abouthome />} />
+            <Route path='/about' element ={<Abouthero />} />
         </Routes>
     </BrowserRouter>
-// import Nav from './component/Nav';
-// import Hero from './component/Hero';
-// import AboutUs from './component/AboutUs';
-// import Product from './component/Product';
-// import Footer from './component/Footer';
-
-// function App() {
-//   return (
-//     <div>
-//       <Nav />
-//       <Hero />
-//       <AboutUs />
-//       <Product />
-//       <Footer/>
-//     </div>
-// >>>>>>> main
   );
 }
 
