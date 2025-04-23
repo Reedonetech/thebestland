@@ -10,7 +10,7 @@ const Nav = () => {
   }
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
-      <div className="flex items-center justify-around py-4">
+      <div className="flex items-center justify-between py-4 px-4">
         {/* Logo */}
         <div className="text-black-500 text-[18px] lg:text-[22px] font-extrabold tracking-wide">
           THE BESTPRICE
@@ -24,15 +24,10 @@ const Nav = () => {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex gap-8 font-semibold text-gray-700">
-          <li><a href="#about" className="hover:text-yellow-600">About</a></li>
-          <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
-          <li><a href="#Enroll" className="hover:text-yellow-600" onClick={handleEnrollClick}>Be a Vendor</a></li>
-        </ul>
+      
         <div className='hidden lg:flex gap-4'>
-          <button className='bg-yellow-300 px-[40px] py-[10px]'>Login</button>
-          <button className='bg-yellow-300 px-[40px] py-[10px]'>Sign up</button>
+          <button className='bg-black text-white px-[30px] rounded-lg py-[10px]'>Login</button>
+          <button className='bg-black text-white px-[30px] rounded-lg py-[10px]'>Sign up</button>
         </div>
       </div>
 
@@ -42,12 +37,10 @@ const Nav = () => {
           isOpen ? 'max-h-screen py-10' : 'max-h-0'
         }`}
       >
-        <ul className="flex flex-col gap-4 font-medium text-white justify-center items-center ">
-          <li><a href="#about" className="hover:text-yellow-600">About</a></li>
-          <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
-          <li><a href="#Enroll" className="hover:text-yellow-600" onClick={handleEnrollClick}>Be a Vendor</a></li>
-        </ul>
+        <div className='flex flex-col gap-4'>
+          <button className='bg-yellow-300 px-[20px] py-[10px]'>Login</button>
+          <button className='bg-yellow-300 px-[20px] py-[10px]'>Sign up</button>
+        </div>
       </div>
     </nav>
   );
